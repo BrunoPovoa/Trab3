@@ -1,0 +1,153 @@
+:root {
+  --modal-width: 200%;
+}
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+}
+
+header {
+  position: sticky;
+  z-index: 10000;
+  top: 0;
+}
+#navBar {
+  background: #343A40 !important;
+}
+.navItens {
+  color: #ccc !important;
+  transition: 0.5s;
+}
+.navItens:hover{
+  color: #fff !important;
+}
+#banner {
+  position: relative;
+}
+#banner span{
+
+  opacity: 1;
+  font-weight: bold;
+  animation: breath 2.1s infinite linear;
+  transition: 0.1s;
+}
+#banner span:last-child {
+  color: red;
+}
+
+#banner span:nth-child(1) { animation-delay: 0.1s;}
+#banner span:nth-child(2) { animation-delay: 0.2s;}
+#banner span:nth-child(3) { animation-delay: 0.3s;}
+#banner span:nth-child(4) { animation-delay: 0.4s;}
+#banner span:nth-child(5) { animation-delay: 0.5s;}
+#banner span:nth-child(6) { animation-delay: 0.6s;}
+
+
+@keyframes breath {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+#bikesContainer,
+#cyclistContainer {
+  display: flex;
+}
+#bikesContent {
+  gap: 10px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+.card {
+  max-width: 500px !important;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.modal-dialog {
+  position: relative;
+}
+.modal-content {
+  position: relative;
+  width: var(--modal-width) !important;
+}
+.modal-body img{
+  width: 100%;
+}
+#bikes,
+#champions {
+  margin-block: 40px;
+}
+
+#cyclistContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item img{
+  max-width: 500px;
+}
+.carousel-item .carousel-caption {
+  opacity: 0;
+}
+.carousel-item.active .carousel-caption {
+  opacity: 1.5;
+  font-weight: bolder;
+}
+#products {
+  padding-block: 40px;
+}
+
+
+.available {
+  color: green;
+}
+.sold {
+  color: red;
+}
+
+#modal1,
+#modal2,
+#modal3 {
+  z-index: 20000;
+}
+
+@media (max-width: 1500px) {
+  :root {
+    --modal-width: 150%;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --modal-width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+  }
+  #bikesContent {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+  }
+  .carousel-item img{
+    max-width: 300px;
+  }
+}

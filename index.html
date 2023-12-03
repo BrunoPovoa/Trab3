@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site de venda de bicicletas">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Bruno">
+  <link rel="stylesheet" href="./styles/style.min.css">
+  <!-- Bootstrap CSS Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  
+  <title>CicloX</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-12">
+          <!-- Menu -->
+          <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+              <a class="navbar-brand navItens text-focus-in" id="banner" href="#">
+                <span>C</span>
+                <span>i</span>
+                <span>c</span>
+                <span>l</span>
+                <span>o</span>
+                <span>X</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link navItens" href="#bikes">Bicicletas <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navItens" href="#champions">Nossos Campeões</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navItens" href="#products">Estoque</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navItens" href="#footer">Fale Conosco</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+          </header>
+          <main>
+            
+            <!-- Bicicletas Modal-->
+            <div class="col-md-12 " id="bikes">
+              <h1>Bicicletas</h1>
+              <div class="mt-5" id="bikesContainer">
+                <!-- Cards -->
+                <div class="row" id="bikesContent">
+                  <!-- Card 1 -->
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="./assets/bikes/UltraRider.webp" width="300" height="200" class="card-img-top" alt="Card Image 1" data-toggle="modal" data-target="#modal1">
+                      <div class="card-body">
+                        <h5 class="card-title">Ultra Rider</h5>
+                        <p class="card-text">R$ 2500</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Card 2 -->
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="./assets/bikes/GigaRider.webp" width="300" height="200" class="card-img-top" alt="Card Image 2" data-toggle="modal" data-target="#modal2">
+                      <div class="card-body">
+                        <h5 class="card-title">Giga Rider</h5>
+                        <p class="card-text">R$ 3000</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Card 3 -->
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="./assets/bikes/MaxRider.webp" width="300" height="200" class="card-img-top" alt="Card Image 3" data-toggle="modal" data-target="#modal3">
+                      <div class="card-body">
+                        <h5 class="card-title">Max Rider</h5>
+                        <p class="card-text">R$ 8000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Modal 1 -->
+              <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <img src="./assets/bikes/UltraRider.webp" width="300" height="200" class="img-fluid" alt="Card Image 1">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Modal 2 -->
+              <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <img src="./assets/bikes/GigaRider.webp" width="300" height="200" class="img-fluid" alt="Card Image 2">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Modal 3 -->
+              <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <img src="./assets/bikes/MaxRider.webp" width="300" height="200" class="img-fluid" alt="Card Image 3">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+  
+            </div>
+  
+            <!-- Campeoes Carrousel-->
+            <div class="col-md-12 " id="champions">
+              <h1>Nossos Atletas</h1>
+              <div class="col-md-12">
+                <div class="mt-5" id="cyclistContainer">
+                  <div class="carousel slide" id="carousel-562297">
+                    <ol class="carousel-indicators">
+                      <li data-slide-to="0" data-target="#carousel-562297">
+                      </li>
+                      <li data-slide-to="1" data-target="#carousel-562297">
+                      </li>
+                      <li data-slide-to="2" data-target="#carousel-562297" class="active">
+                      </li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item">
+                        <img class="d-block" width="500" alt="Carousel Bootstrap First" src="./assets/cyclists/ChrisKendall.webp" />
+                        <div class="carousel-caption">
+                          <h4>
+                            Chris Kendall
+                          </h4>
+                          <p>
+                            Com uma paixão ardente pelas trilhas e estradas, Chris Kendall emerge como uma lenda viva do ciclismo.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" id="carrouselContent">
+                        <img class="d-block" width="500" alt="Carousel Bootstrap Second" src="./assets/cyclists/LorenzoHammers.webp" />
+                        <div class="carousel-caption">
+                          <h4>
+                            Lorenzo Hammers
+                          </h4>
+                          <p>
+                            Lorenzo Hammers, uma força implacável sob duas rodas, redefine os limites do ciclismo de alta performance.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item active">
+                        <img class="d-block" width="500" alt="Carousel Bootstrap Third" src="./assets/cyclists/NicolleEvans.webp" />
+                        <div class="carousel-caption">
+                          <h4>
+                            Nicolle Evans
+                          </h4>
+                          <p>
+                            Ciclista renomada que desafia os limites do ciclismo com sua paixão inabalável pelo esporte
+                          </p>
+                        </div>
+                      </div>
+                    </div> <a class="carousel-control-prev" href="#carousel-562297" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-562297" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Tabela -->
+            <div class="col-md-12" id="products">
+              <div class="col-md-12">
+                <h1>Produtos</h1>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>
+                        #
+                      </th>
+                      <th>
+                        Produto
+                      </th>
+                      <th>
+                        Valor
+                      </th>
+                      <th>
+                        Tipo
+                      </th>
+                      <th>
+                        Status
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Bicicleta 1 -->
+                    <tr>
+                      <td>1</td>
+                      <td>CicloPrestige 5000</td>
+                      <td>R$ 4.999,99</td>
+                      <td>Urbana</td>
+                      <td class="available">Disponível</td>
+                    </tr>
+  
+                    <!-- Bicicleta 2 -->
+                    <tr>
+                      <td>2</td>
+                      <td>ExtremeTrail X1</td>
+                      <td>R$ 3.299,99</td>
+                      <td>Montanha</td>
+                      <td class="available">Disponível</td>
+                    </tr>
+  
+                    <!-- Bicicleta 3 -->
+                    <tr>
+                      <td>3</td>
+                      <td>SpeedMaster 2000</td>
+                      <td>R$ 2.499,99</td>
+                      <td>Speed</td>
+                      <td class="sold">Vendida</td>
+                    </tr>
+  
+                    <!-- Bicicleta 4 -->
+                    <tr>
+                      <td>4</td>
+                      <td>CityCruiser S</td>
+                      <td>R$ 1.899,99</td>
+                      <td>Urbana</td>
+                      <td class="available">Disponível</td>
+                    </tr>
+  
+                    <!-- Bicicleta 5 -->
+                    <tr>
+                      <td>5</td>
+                      <td>Explorer Pro</td>
+                      <td>R$ 4.599,99</td>
+                      <td>Aventura</td>
+                      <td class="available">Disponível</td>
+                    </tr>
+  
+                    <!-- Bicicleta 6 -->
+                    <tr>
+                      <td>6</td>
+                      <td>UrbanGlide E250</td>
+                      <td>R$ 2.199,99</td>
+                      <td>Urbana</td>
+                      <td class="sold">Vendida</td>
+                    </tr>
+  
+                    <!-- Bicicleta 7 -->
+                    <tr>
+                      <td>7</td>
+                      <td>TrailBlazer M8</td>
+                      <td>R$ 3.799,99</td>
+                      <td>Montanha</td>
+                      <td class="available">Disponível</td>
+                    </tr>
+  
+                    <!-- Bicicleta 8 -->
+                    <tr>
+                      <td>8</td>
+                      <td>Commuter X</td>
+                      <td>R$ 2.799,99</td>
+                      <td>Urbana</td>
+                      <td class="available">Disponível</td>
+                    </tr>
+  
+  
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </main>
+          <!-- footer -->
+          <footer class="bg-dark text-light text-center text-md-left" id="footer">
+            <div class="container">
+              <div class="row pt-4">
+                <div class="col-sm-6 col-md-3 pb-4">
+                  <h4 class="mb-4">
+                    Serviços
+                  </h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-light">Venda de Bicicletas</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-light">Manutenção</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-light">Acessórios</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-secondary">Voltar</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 pb-4">
+                  <h4 class="mb-4">
+                    Sobre
+                  </h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-light">A Empresa</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-light">Equipe</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-light">Carreiras</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 pb-4">
+                  <h4 class="mb-4">
+                    Explore Nossas Bicicletas Exclusivas
+                  </h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-light">Conheça nossa coleção premium de bicicletas urbanas e de montanha</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-light">Personalize sua própria bicicleta com nosso serviço de montagem exclusivo</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-light">Descubra ofertas especiais em acessórios e equipamentos de ciclismo</a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+              <p class="text-center text-secondary border-top border-secondary py-4">
+                CicloX &copy; 2023
+              </p>
+            </div>
+          </footer>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+
+</body>
+
+</html>
